@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Fri Feb 11 22:59:44 2022
+# Process ID: 10104
+# Current directory: C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.runs/impl_1
+# Command line: vivado.exe -log my_4Bit_RCA_Implementation.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source my_4Bit_RCA_Implementation.tcl -notrace
+# Log file: C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.runs/impl_1/my_4Bit_RCA_Implementation.vdi
+# Journal file: C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.runs/impl_1\vivado.jou
+# Running On: DESKTOP-77SS1MO, OS: Windows, CPU Frequency: 4300 MHz, CPU Physical cores: 16, Host memory: 34145 MB
+#-----------------------------------------------------------
+source my_4Bit_RCA_Implementation.tcl -notrace

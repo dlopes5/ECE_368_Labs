@@ -1,0 +1,256 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Fri Feb 11 22:59:10 2022
+# Process ID: 5320
+# Current directory: C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.runs/synth_1
+# Command line: vivado.exe -log my_4Bit_RCA_Implementation.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source my_4Bit_RCA_Implementation.tcl
+# Log file: C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.runs/synth_1/my_4Bit_RCA_Implementation.vds
+# Journal file: C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.runs/synth_1\vivado.jou
+# Running On: DESKTOP-77SS1MO, OS: Windows, CPU Frequency: 4300 MHz, CPU Physical cores: 16, Host memory: 34145 MB
+#-----------------------------------------------------------
+source my_4Bit_RCA_Implementation.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/utils_1/imports/synth_1/my_4Bit_RCA_Implementation.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/utils_1/imports/synth_1/my_4Bit_RCA_Implementation.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top my_4Bit_RCA_Implementation -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12604
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1260.410 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'my_4Bit_RCA_Implementation' [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_Structural_nBit_RCA_Implementation.vhd:27]
+	Parameter n bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'my_Structural_nBit_RCA' declared at 'C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_Structural_nBit_RCA.vhd:7' bound to instance 'Adder' of component 'my_Structural_nBit_RCA' [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_Structural_nBit_RCA_Implementation.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'my_Structural_nBit_RCA' [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_Structural_nBit_RCA.vhd:20]
+	Parameter n bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'my_full_adder' declared at 'C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_full_adder.vhd:4' bound to instance 'U' of component 'my_full_adder' [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_Structural_nBit_RCA.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'my_full_adder' [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_full_adder.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'my_full_adder' (1#1) [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_full_adder.vhd:9]
+INFO: [Synth 8-3491] module 'my_full_adder' declared at 'C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_full_adder.vhd:4' bound to instance 'U' of component 'my_full_adder' [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_Structural_nBit_RCA.vhd:36]
+INFO: [Synth 8-3491] module 'my_full_adder' declared at 'C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_full_adder.vhd:4' bound to instance 'U' of component 'my_full_adder' [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_Structural_nBit_RCA.vhd:36]
+INFO: [Synth 8-3491] module 'my_full_adder' declared at 'C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_full_adder.vhd:4' bound to instance 'U' of component 'my_full_adder' [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_Structural_nBit_RCA.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'my_Structural_nBit_RCA' (2#1) [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_Structural_nBit_RCA.vhd:20]
+INFO: [Synth 8-3491] module 'my_BCD_Converter' declared at 'C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_BCD_Converter.vhd:5' bound to instance 'Over' of component 'my_BCD_Converter' [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_Structural_nBit_RCA_Implementation.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'my_BCD_Converter' [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_BCD_Converter.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'my_BCD_Converter' (3#1) [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_BCD_Converter.vhd:18]
+INFO: [Synth 8-3491] module 'my_BCD_Converter' declared at 'C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_BCD_Converter.vhd:5' bound to instance 'Carry' of component 'my_BCD_Converter' [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_Structural_nBit_RCA_Implementation.vhd:98]
+INFO: [Synth 8-3491] module 'my_BCD_Converter' declared at 'C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_BCD_Converter.vhd:5' bound to instance 'Sum' of component 'my_BCD_Converter' [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_Structural_nBit_RCA_Implementation.vhd:101]
+WARNING: [Synth 8-614] signal 'CLK_Counter' is read in the process but is not in the sensitivity list [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_Structural_nBit_RCA_Implementation.vhd:113]
+WARNING: [Synth 8-614] signal 'SDisp' is read in the process but is not in the sensitivity list [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_Structural_nBit_RCA_Implementation.vhd:122]
+WARNING: [Synth 8-614] signal 'Off' is read in the process but is not in the sensitivity list [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_Structural_nBit_RCA_Implementation.vhd:122]
+WARNING: [Synth 8-614] signal 'NegSign' is read in the process but is not in the sensitivity list [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_Structural_nBit_RCA_Implementation.vhd:122]
+WARNING: [Synth 8-614] signal 'C4Disp' is read in the process but is not in the sensitivity list [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_Structural_nBit_RCA_Implementation.vhd:122]
+WARNING: [Synth 8-614] signal 'OVDisp' is read in the process but is not in the sensitivity list [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_Structural_nBit_RCA_Implementation.vhd:122]
+INFO: [Synth 8-256] done synthesizing module 'my_4Bit_RCA_Implementation' (4#1) [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_Structural_nBit_RCA_Implementation.vhd:27]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1260.410 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1260.410 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1260.410 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1260.410 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/constrs_1/new/Constraints.xdc]
+Finished Parsing XDC File [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/constrs_1/new/Constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/constrs_1/new/Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/my_4Bit_RCA_Implementation_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/my_4Bit_RCA_Implementation_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1260.410 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1260.410 ; gain = 0.000
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1260.410 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1260.410 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1260.410 ; gain = 0.000
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'AnodeEn_reg' [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_Structural_nBit_RCA_Implementation.vhd:126]
+WARNING: [Synth 8-327] inferring latch for variable 'MasterDisp_reg' [C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.srcs/sources_1/new/my_Structural_nBit_RCA_Implementation.vhd:127]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1260.410 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 4     
++---Muxes : 
+	   9 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   9 Input    7 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1260.410 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1260.410 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1260.410 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1260.410 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1260.410 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1260.410 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1260.410 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1260.410 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1260.410 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1260.410 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |     2|
+|4     |LUT2   |     4|
+|5     |LUT3   |    14|
+|6     |LUT4   |     2|
+|7     |LUT5   |    10|
+|8     |LUT6   |    24|
+|9     |FDCE   |    32|
+|10    |LD     |    15|
+|11    |IBUF   |     9|
+|12    |OBUF   |    21|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1260.410 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1260.410 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1260.410 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1260.410 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1260.410 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  LD => LDCE: 15 instances
+
+Synth Design complete, checksum: fd79fcc2
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1260.410 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Daniel/Desktop/Lab_2_Part_4/Lab_2_Part_4.runs/synth_1/my_4Bit_RCA_Implementation.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file my_4Bit_RCA_Implementation_utilization_synth.rpt -pb my_4Bit_RCA_Implementation_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 11 22:59:37 2022...

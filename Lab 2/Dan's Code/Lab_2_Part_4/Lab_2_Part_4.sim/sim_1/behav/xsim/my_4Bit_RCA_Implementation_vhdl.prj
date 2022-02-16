@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Lab_2_Part_4.srcs/sources_1/new/my_BCD_Converter.vhd" \
+"../../../../Lab_2_Part_4.srcs/sources_1/new/my_Structural_nBit_RCA.vhd" \
+"../../../../Lab_2_Part_4.srcs/sources_1/new/my_full_adder.vhd" \
+"../../../../Lab_2_Part_4.srcs/sources_1/new/my_Structural_nBit_RCA_Implementation.vhd" \
+
+# Do not sort compile order
+nosort
