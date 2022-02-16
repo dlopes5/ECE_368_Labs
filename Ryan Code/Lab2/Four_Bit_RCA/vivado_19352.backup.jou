@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun Feb 13 13:56:58 2022
+# Process ID: 19352
+# Current directory: C:/Users/rferr/Desktop/Vivado Projects/Four_Bit_RCA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21800 C:\Users\rferr\Desktop\Vivado Projects\Four_Bit_RCA\Four_Bit_RCA.xpr
+# Log file: C:/Users/rferr/Desktop/Vivado Projects/Four_Bit_RCA/vivado.log
+# Journal file: C:/Users/rferr/Desktop/Vivado Projects/Four_Bit_RCA\vivado.jou
+# Running On: DESKTOP-HNEPMEK, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 8, Host memory: 34287 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/rferr/Desktop/Vivado Projects/Four_Bit_RCA/Four_Bit_RCA.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source n_bit_RCA.tcl
+add_force {/n_bit_RCA/A} -radix dec {4 0ns}
+add_force {/n_bit_RCA/B} -radix dec {-1 0ns}
+add_force {/n_bit_RCA/Cin[0]} -radix dec {0 0ns}
+run all
+run 10 us
+add_force {/n_bit_RCA/Cin[0]} -radix dec {1 0ns}
+run 10 us
+close_sim

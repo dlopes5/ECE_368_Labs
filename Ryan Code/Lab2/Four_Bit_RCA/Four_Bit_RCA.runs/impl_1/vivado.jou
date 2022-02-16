@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Feb 14 13:50:28 2022
+# Process ID: 13156
+# Current directory: C:/Users/rferr/Desktop/Vivado Projects/Four_Bit_RCA/Four_Bit_RCA.runs/impl_1
+# Command line: vivado.exe -log n_bit_RCA.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source n_bit_RCA.tcl -notrace
+# Log file: C:/Users/rferr/Desktop/Vivado Projects/Four_Bit_RCA/Four_Bit_RCA.runs/impl_1/n_bit_RCA.vdi
+# Journal file: C:/Users/rferr/Desktop/Vivado Projects/Four_Bit_RCA/Four_Bit_RCA.runs/impl_1\vivado.jou
+# Running On: DESKTOP-HNEPMEK, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 8, Host memory: 34287 MB
+#-----------------------------------------------------------
+source n_bit_RCA.tcl -notrace

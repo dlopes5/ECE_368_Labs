@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Four_Bit_RCA.srcs/sources_1/new/n_bit_RCA.vhd" \
+"../../../../Four_Bit_RCA.srcs/sim_1/new/tb_nbit_RCA.vhd" \
+
+# Do not sort compile order
+nosort

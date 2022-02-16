@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Feb 14 13:40:38 2022
+# Process ID: 22728
+# Current directory: C:/Users/rferr/Desktop/Vivado Projects/Four_Bit_RCA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18452 C:\Users\rferr\Desktop\Vivado Projects\Four_Bit_RCA\Four_Bit_RCA.xpr
+# Log file: C:/Users/rferr/Desktop/Vivado Projects/Four_Bit_RCA/vivado.log
+# Journal file: C:/Users/rferr/Desktop/Vivado Projects/Four_Bit_RCA\vivado.jou
+# Running On: DESKTOP-HNEPMEK, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 8, Host memory: 34287 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/rferr/Desktop/Vivado Projects/Four_Bit_RCA/Four_Bit_RCA.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source my_RCA.tcl
+add_force {/my_RCA/A} -radix bin {1 0ns}
+add_force {/my_RCA/A} -radix bin {1 0ns}
+add_force {/my_RCA/B} -radix bin {2 0ns}
+add_force {/my_RCA/B} -radix bin {10 0ns}
+add_force {/my_RCA/Cin} -radix bin {0 0ns}
+run 5 us
+add_force {/my_RCA/A} -radix bin {101 0ns}
+add_force {/my_RCA/Cin} -radix bin {1 0ns}
+run 5 us
+set_property is_enabled false [get_files  {{C:/Users/rferr/Desktop/Vivado Projects/Four_Bit_RCA/Four_Bit_RCA.srcs/sources_1/new/my_RCA.vhd}}]
+set_property is_enabled true [get_files  {{C:/Users/rferr/Desktop/Vivado Projects/Four_Bit_RCA/Four_Bit_RCA.srcs/sources_1/new/n_bit_RCA.vhd}}]
+set_property is_enabled true [get_files  {{C:/Users/rferr/Desktop/Vivado Projects/Four_Bit_RCA/Four_Bit_RCA.srcs/sim_1/new/tb_nbit_RCA.vhd}}]
+update_compile_order -fileset sim_1
+close_sim

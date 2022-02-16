@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "n_bit_RCA_behav" "xil_defaultlib.n_bit_RCA" -log "elaborate.log" 
